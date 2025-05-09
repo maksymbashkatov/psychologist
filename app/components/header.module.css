@@ -1,0 +1,52 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  color: #4C5866;
+  height: 120px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.menu {
+  justify-self: center;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 33px;
+  font-size: 24px;
+}
+
+.menuItem {
+  padding: 10px 0;
+  position: relative;
+}
+
+.menuItem::before {
+  content: '';
+  position: absolute;
+  left: 50.3%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #C08081;
+  transition: 0.3s;
+}
+
+.menuItem:hover::before {
+  width: 100%;
+}
+
+.socials {
+  justify-self: end;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, auto);
+}
+
+.socials a {
+  line-height: 0;
+}

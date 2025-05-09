@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import Header from './components/header';
 
 export const metadata: Metadata = {
   title: '',
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang='ru'>
       <body>
+        <Header/>
         {children}
       </body>
     </html>

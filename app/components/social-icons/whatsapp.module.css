@@ -1,0 +1,17 @@
+.svg circle {
+  transition: 0.3s;
+}
+
+.svg path {
+  transition: 0.3s;
+}
+
+.svg:hover path {
+  fill: #25D366;
+}
+
+@media (max-width: 540px) {
+  .svg circle {
+    transition: 0.1s;
+  }
+}
