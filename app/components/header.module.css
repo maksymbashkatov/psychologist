@@ -50,3 +50,35 @@
 .socials a {
   line-height: 0;
 }
+
+.socials a:nth-child(1):hover svg circle {
+  fill: #C08081;
+}
+
+@media (min-width: 541px) and (max-width: 1319px) {
+  .header {
+    height: 100px;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .menu {
+    column-gap: 30px;
+    font-size: 20px;
+  }
+  
+  .menuItem {
+    padding: 8px 0;
+  }
+
+  .socials {
+    column-gap: 18px;
+  }
+
+  .socials a svg {
+    width: 26px;
+  }
+}

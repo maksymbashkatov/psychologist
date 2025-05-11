@@ -1,0 +1,126 @@
+.hero {
+  height: calc(100vh - 120px);
+  background-color: #E1E3E7;
+  background-image: url(/mainPhoto.webp);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  background-size: auto calc(100vh - 120px);
+  color: #4C5866;
+}
+
+.heroContainer {
+  display: grid;
+  height: 100%;
+}
+
+.heroContent {
+  align-self: center;
+  display: grid;
+  row-gap: 60px;
+  width: 766px;
+}
+
+.mainTitle {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 30px;
+
+  span {
+    display: block;
+  }
+}
+
+.mainTitle *:nth-child(1) {
+  font-size: 80px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: .74;
+  margin-left: -1px;
+}
+
+.mainTitle *:nth-child(2) {
+  justify-self: end;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: .74;
+  margin-right: -2px;
+}
+
+.mainTitle *:nth-child(3) {
+  font-size: 24.5px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.quote {
+  justify-self: end;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: .74;
+  width: fit-content;
+  padding: 32px 80px;
+  background: #FFFFFF;
+  outline: 1px dashed #4C5866;
+  outline-offset: -5px;
+  border-radius: 60px 0px;
+}
+
+.openModal {
+  justify-self: end;
+  width: fit-content;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #C08081;
+  padding: 11px 30px;
+  font-size: 36px;
+  font-weight: 300;
+  transition: all 0.5s;
+}
+
+.openModal:hover {
+  background-color: #AF5E5F;
+}
+
+@media (min-width: 541px) and (max-width: 1319px) {
+  .hero {
+    height: calc(100vh - 100px);
+    background-size: auto calc(100vh - 100px);
+  }
+
+  .heroContent {
+    row-gap: 40px;
+    width: 668px;
+  }
+  
+  .mainTitle {
+    row-gap: 20px;
+  }
+  
+  .mainTitle *:nth-child(1) {
+    font-size: 70px;
+    margin-left: -1px;
+  }
+  
+  .mainTitle *:nth-child(2) {
+    font-size: 70px;
+    margin-right: -2px;
+  }
+  
+  .mainTitle *:nth-child(3) {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .quote {
+    font-size: 19px;
+    padding: 28px 70px;
+    outline-offset: -5px;
+    border-radius: 60px 0px;
+  }
+
+  .openModal {
+    padding: 10px 28px;
+    font-size: 30px;
+  }
+}

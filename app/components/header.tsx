@@ -3,6 +3,8 @@ import styles from './header.module.css';
 import { menu } from '../data';
 import Telegram from './social-icons/telegram';
 import WhatsApp from './social-icons/whatsapp';
+import Youtube from './social-icons/youtube';
+import Instagram from './social-icons/instagram';
 
 export default function Header() {
   return <header>
@@ -18,9 +20,9 @@ export default function Header() {
       </nav>
       <div className={styles.socials}>
         <Telegram fill={'#FFF'}/>
-        <WhatsApp/>
-        <Telegram fill={'#FFF'}/>
-        <WhatsApp/>
+        <WhatsApp fill={'#DFBFC0'}/>
+        <Youtube fill={'#DFBFC0'}/>
+        <Instagram fill={'#DFBFC0'}/>
       </div>
     </div>
   </header>
