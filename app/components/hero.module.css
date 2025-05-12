@@ -82,7 +82,7 @@
   background-color: #AF5E5F;
 }
 
-@media (min-width: 541px) and (max-width: 1319px) {
+@media (min-width: 1025px) and (max-width: 1319px) {
   .hero {
     height: calc(100vh - 100px);
     background-size: auto calc(100vh - 100px);
@@ -124,3 +124,110 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 1024px) {
+  .hero {
+    height: calc(100vh - 100px);
+    background-size: auto calc(100vh - 100px);
+    background-position: right -60px bottom 0;
+  }
+  
+  .heroContent {
+    grid-template-rows: 1fr auto auto;
+    align-self: end;
+    align-content: end;
+    row-gap: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mainTitle {
+    row-gap: 20px;
+    background: rgba(225, 227, 231, .75);
+    padding: 20px;
+  }
+
+  .mainTitle *:nth-child(1) {
+    font-size: 70px;
+    margin-left: 0;
+  }
+  
+  .mainTitle *:nth-child(2) {
+    justify-self: start;
+    font-size: 70px;
+    margin-right: 0;
+    margin-left: -7px;
+  }
+  
+  .mainTitle *:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+
+  .quote {
+    grid-row: 1 / 2;
+    align-self: center;
+    padding: 20px 50px;
+    width: 300px;
+    line-height: normal;
+    margin-top: -200px;
+  }
+
+  .openModal {
+    padding: 11px 30px;
+    font-size: 36px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero {
+    height: calc(100dvh - 60px);
+    background-image: url(/mainPhotoPhone.webp);
+    background-size: auto calc(100dvh - 60px);
+    background-position: right -20px bottom 0;
+  }
+  
+  .heroContent {
+    padding-bottom: 20px;
+  }
+  
+  .mainTitle {
+    row-gap: 10px;
+    padding: 20px 10px;
+  }
+
+  .mainTitle *:nth-child(1) {
+    font-size: 36.5px;
+    margin-left: -0.5;
+  }
+  
+  .mainTitle *:nth-child(2) {
+    font-size: 36.5px;
+    margin-left: -3px;
+  }
+  
+  .mainTitle *:nth-child(3) {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 0;
+  }
+
+  .quote {
+    align-self: start;
+    font-size: 16px;
+    padding: 15px;
+    width: 160px;
+    margin-top: 60px;
+    border-radius: 30px 0px;
+  }
+
+  .openModal {
+    padding: 14px 0;
+    font-size: 24px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 393px) {}

@@ -6,7 +6,8 @@ import WhatsApp from './social-icons/whatsapp';
 import Youtube from './social-icons/youtube';
 import Instagram from './social-icons/instagram';
 
-export default function Header() {
+export default function Header(
+) {
   return <header>
     <div className={`${styles.header} container`}>
       <Link className={styles.logo} href='/'>Диана Лонская</Link>
