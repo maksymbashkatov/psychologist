@@ -55,6 +55,14 @@
   fill: #C08081;
 }
 
+.mobMenuButton {
+  display: none;
+}
+
+.mobMenu {
+  display: none;
+}
+
 @media (min-width: 1025px) and (max-width: 1319px) {
   .header {
     height: 100px;
@@ -115,7 +123,7 @@
 
 @media (max-width: 540px) {
   .header {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto 1fr auto;
     height: 60px;
   }
   
@@ -126,18 +134,86 @@
 
   .menu {
     display: none;
-    justify-self: end;
-    column-gap: 21px;
-    font-size: 20px;
   }
 
   .socials {
-    justify-self: end;
+    justify-self: center;
     column-gap: 10px;
   }
 
   .socials a svg {
     width: 26px;
+  }
+
+  .mobMenuButton {
+    justify-self: end;
+    display: grid;
+    row-gap: 6px;
+    z-index: 2;
+  }
+
+  .mobMenuButton > .mobMenuLineOpen:nth-child(1) {
+    transform: translateY(calc(6px + 100%)) rotate(400deg);
+  }
+
+  .mobMenuButton > .mobMenuLineOpen:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobMenuButton > .mobMenuLineOpen:nth-child(3) {
+    transform: translateY(calc(-6px - 100%)) rotate(-40deg);
+  }
+
+  .mobMenuLine {
+    width: 40px;
+    height: 4px;
+    background-color: #4C5866;
+    border-radius: 2px;
+    transition: 1s;
+  }
+
+  .mobMenu {
+    display: block;
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 1;
+  }
+
+  .mobMenu1 {
+    top: 0;
+    height: 30%;
+    background-color: rgba(255, 255, 255, .9);
+    transition: .7s;
+  }
+
+  .mobMenu2 {
+    top: 30%;
+    height: 40%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    transition: 1.5s;
+  }
+
+  .mobMenu3 {
+    top: 70%;
+    height: 30%;
+    transition: 1s;
+  }
+
+  .mobMenuOpen {
+    left: 0;
+  }
+
+  .menuItem {
+    font-size: 26px;
+    width: fit-content;
+  }
+  
+  .menuItem::before {
+    transition: 0.1s;
   }
 }
 
