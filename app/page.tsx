@@ -1,11 +1,7 @@
 import Hero from "./components/hero";
 
 export default function Page() {
-  return (
-    <>
-      <main>
-        <Hero/>
-      </main>
-    </>
-  );
+  return <main>
+    <Hero/>
+  </main>;
 }

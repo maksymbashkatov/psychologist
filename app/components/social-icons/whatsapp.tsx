@@ -4,8 +4,8 @@ import styles from './icon.module.css';
 export default function WhatsApp(
   { fill }: { fill: string }
 ) {
-  return (<Link
-    href='https://wa.me/375259071055'
+  return <Link
+    href='https://wa.me/375...'
     target='_blank'
     rel='nofollow noopener noreferrer'
   >
@@ -21,6 +21,5 @@ export default function WhatsApp(
         fill={fill}
       />
     </svg>
-  </Link>
-  );
+  </Link>;
 }

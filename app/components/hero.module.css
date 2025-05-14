@@ -230,4 +230,21 @@
   }
 }
 
-@media (max-width: 393px) {}
+@media (max-width: 393px) {
+  .hero {
+    background-position: right -45px bottom 0;
+  }
+
+  .mainTitle *:nth-child(1) {
+    font-size: 34.5px;
+  }
+  
+  .mainTitle *:nth-child(2) {
+    font-size: 34.5px;
+  }
+
+  .quote {
+    font-size: 15px;
+    width: 154px;
+  }
+}

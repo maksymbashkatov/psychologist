@@ -52,5 +52,5 @@ export default function Header(
       </nav>
       <div className={`${styles.mobMenu} ${styles.mobMenu3} ${isMenuOpen ? styles.mobMenuOpen : ''}`}></div>
     </div>
-  </header>
+  </header>;
 }

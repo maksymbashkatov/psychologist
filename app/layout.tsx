@@ -26,12 +26,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang='ru'>
-      <body>
-        <Header/>
-        {children}
-      </body>
-    </html>
-  );
+  return <html lang='ru'>
+    <body>
+      <Header/>
+      {children}
+    </body>
+  </html>;
 }

@@ -4,8 +4,8 @@ import styles from './telegram.module.css';
 export default function Telegram(
   { fill }: { fill: string }
 ) {
-  return (<Link
-    href='https://t.me/websensei_online'
+  return <Link
+    href='https://t.me/telegram_login_here'
     target='_blank'
     rel='nofollow noopener noreferrer'
   >
@@ -22,6 +22,5 @@ export default function Telegram(
         fill={fill}
       />
     </svg>
-  </Link>
-  );
+  </Link>;
 }

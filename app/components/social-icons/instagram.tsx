@@ -4,8 +4,8 @@ import styles from './icon.module.css';
 export default function Instagram(
   { fill }: { fill: string }
 ) {
-  return (<Link
-    href='https://t.me/websensei_online'
+  return <Link
+    href='https://...'
     target='_blank'
     rel='nofollow noopener noreferrer'
   >
@@ -29,6 +29,5 @@ export default function Instagram(
         fill={fill}
       />
     </svg>
-  </Link>
-  );
+  </Link>;
 }
