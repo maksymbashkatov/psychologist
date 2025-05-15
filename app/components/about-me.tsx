@@ -9,7 +9,7 @@ const theses = [
 
 export default function AboutMe() {
   return <section className={`${styles.aboutMe} section`}>
-    <div className='container'>
+    <div className={`${styles.container} container`}>
       <div className={styles.content}>
         <h2 className={styles.title}>Обо мне</h2>
         <div className={styles.theses}>
