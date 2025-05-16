@@ -184,9 +184,9 @@
 
 @media (max-width: 540px) {
   .hero {
-    height: calc(100dvh - 60px);
+    height: calc(100svh - 60px);
     background-image: url(/mainPhotoPhone.webp);
-    background-size: auto calc(100dvh - 60px);
+    background-size: auto calc(100svh - 60px);
     background-position: right -20px bottom 0;
   }
   
@@ -233,7 +233,7 @@
 
 @media (max-width: 393px) {
   .hero {
-    background-position: right -45px bottom 0;
+    background-position: right -30px bottom 0;
   }
 
   .mainTitle *:nth-child(1) {
@@ -247,5 +247,15 @@
   .quote {
     font-size: 15px;
     width: 154px;
+  }
+}
+
+@media (max-width: 375px) {
+  .mainTitle *:nth-child(1) {
+    font-size: 33px;
+  }
+  
+  .mainTitle *:nth-child(2) {
+    font-size: 33px;
   }
 }
