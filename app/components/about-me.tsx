@@ -1,11 +1,6 @@
 import Link from 'next/link';
 import styles from './about-me.module.css';
-
-const theses = [
-  {id: 1, content: 'Практикующий психолог'},
-  {id: 2, content: 'Сертифицированный экзистенциальный и психоаналитический психотерапевт'},
-  {id: 3, content: 'Опыт работы более 13 лет'}
-]
+import { theses } from '../data';
 
 export default function AboutMe() {
   return <section className={`${styles.aboutMe} section`}>
