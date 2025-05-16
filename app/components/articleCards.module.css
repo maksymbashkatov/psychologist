@@ -1,0 +1,82 @@
+.container {
+  color: #703738;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto repeat(2, 1fr);
+  gap: 40px 80px;
+}
+
+.title {
+  grid-column: 1 / 3;
+  justify-self: center;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: .72;
+  text-transform: uppercase;
+}
+
+.card {
+  background: #F1EBEC;
+  display: grid;
+  grid-template-rows: repeat(2, auto) 1fr;
+  align-content: start;
+  row-gap: 20px;
+  padding: 60px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+}
+
+.container div:nth-child(2) {
+  background-image: url(./articleCardIcons/armchair.svg);
+}
+
+.container div:nth-child(3) {
+  background-image: url(./articleCardIcons/masks.svg);
+}
+
+.container div:nth-child(4) {
+  background-image: url(./articleCardIcons/donut.svg);
+}
+
+.container div:nth-child(5) {
+  background-image: url(./articleCardIcons/chain.svg);
+}
+
+.card >:nth-child(1) {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.card >:nth-child(2) {
+  color: #000;
+  font-size: 16px;
+}
+
+.card >:nth-child(3) {
+  align-self: end;
+  background: #703738;
+  width: fit-content;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: .72;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.card >:nth-child(3):hover {
+  background: #924849;
+}
+
+@media (min-width: 1025px) and (max-width: 1319px) {
+  .container {
+    gap: 35px 70px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+}
