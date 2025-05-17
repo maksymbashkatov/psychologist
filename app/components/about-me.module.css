@@ -202,7 +202,7 @@
     background-image: url(/photoAboutMeMobile.webp);
     background-size: auto 324px;
     background-repeat: no-repeat;
-    background-position: top 0 right 92.5px;
+    background-position: top 0 right 100px;
   }
 
   .title {
@@ -247,6 +247,10 @@
 }
 
 @media (max-width: 393px) {
+  .aboutMe::before {
+    background-position: top 0 right 92px;
+  }
+
   .theses {
     row-gap: 12px;
   }

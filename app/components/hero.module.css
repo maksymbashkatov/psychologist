@@ -251,6 +251,10 @@
 }
 
 @media (max-width: 375px) {
+  .hero {
+    background-position: right -50px bottom 0;
+  }
+
   .mainTitle *:nth-child(1) {
     font-size: 33px;
   }

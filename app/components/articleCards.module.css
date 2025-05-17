@@ -20,7 +20,7 @@
   display: grid;
   grid-template-rows: repeat(2, auto) 1fr;
   align-content: start;
-  row-gap: 20px;
+  row-gap: 16px;
   padding: 60px;
   border-radius: 10px;
   background-repeat: no-repeat;
@@ -78,5 +78,40 @@
 
   .title {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+    grid-column: 1 / 2;
+  }
+
+  .card {
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+}
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 24.5px;
+  }
+
+  .card {
+    padding: 35px;
+    background-size: auto 46%;
+  }
+
+  .card >:nth-child(1) {
+    font-size: 16px;
+  }
+  
+  .card >:nth-child(2) {
+    font-size: 14px;
   }
 }
