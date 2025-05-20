@@ -1,7 +1,8 @@
-import AboutMe from "./components/about-me";
-import ArticleCards from "./components/articleCards";
-import Hero from "./components/hero";
-import Services from "./components/services";
+import Hero from './components/hero';
+import AboutMe from './components/about-me';
+import Services from './components/services';
+import ArticleCards from './components/article-cards';
+import QuestionsClient from './components/questions-client';
 
 export default function Page() {
   return <main>
@@ -9,5 +10,6 @@ export default function Page() {
     <AboutMe/>
     <Services/>
     <ArticleCards/>
+    <QuestionsClient/>
   </main>;
 }

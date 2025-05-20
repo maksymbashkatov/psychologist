@@ -28,19 +28,19 @@
 }
 
 .container div:nth-child(2) {
-  background-image: url(./articleCardIcons/armchair.svg);
+  background-image: url(./article-card-icons/armchair.svg);
 }
 
 .container div:nth-child(3) {
-  background-image: url(./articleCardIcons/masks.svg);
+  background-image: url(./article-card-icons/masks.svg);
 }
 
 .container div:nth-child(4) {
-  background-image: url(./articleCardIcons/donut.svg);
+  background-image: url(./article-card-icons/donut.svg);
 }
 
 .container div:nth-child(5) {
-  background-image: url(./articleCardIcons/chain.svg);
+  background-image: url(./article-card-icons/chain.svg);
 }
 
 .card >:nth-child(1) {

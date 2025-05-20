@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './articleCards.module.css';
+import styles from './article-cards.module.css';
 import { articleCards } from '../data';
 
 export default function ArticleCards() {
