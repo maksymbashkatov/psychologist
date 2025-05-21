@@ -22,6 +22,11 @@
 .menuItem {
   padding: 10px 0;
   position: relative;
+  transition: 0.5s;
+}
+
+.menuItem:hover {
+  color: #363F49;
 }
 
 .menuItem::before {
