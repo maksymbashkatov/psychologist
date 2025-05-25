@@ -3,37 +3,61 @@
   inset: 0;
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
-  display: grid;
-  align-items: center;
-  justify-items: center;
   z-index: 10;
 }
 
 .modalContent {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  display: grid;
+  row-gap: 40px;
+  position: relative;
+  top: -30px;
+  justify-self: center;
+  align-self: center;
   background: #FFF;
   padding: 40px 60px;
+  width: fit-content;
 }
 
 .closeBtn {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  justify-self: end;
+  width: 60px;
+  height: 60px;
+}
+
+.closeBtn::before {
   position: absolute;
-  color: #FFF;
-  /* top: 10px; */
-  top: 0;
-  /* right: 20px; */
-  right: 0;
-  font-size: 60px;
-  cursor: pointer;
+  content: '';
+  background: #FFF;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: rotate(45deg);
+}
+
+.closeBtn::after {
+  position: absolute;
+  content: '';
+  background: #FFF;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: rotate(-45deg);
 }
 
 .title {
   font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-.form {
-  display: grid;
-  row-gap: 40px;
 }
 
 .form input,
@@ -94,24 +118,20 @@
   font-size: 20px;
 }
 
-/* @media (min-width: 1025px) and (max-width: 1319px) { */
 @media (max-width: 1319px) {
-  .modalContent {
+  .form {
+    row-gap: 20px;
+    top: -20px;
     padding: 20px 30px;
   }
 
   .closeBtn {
-    top: 8px;
-    right: 16px;
-    font-size: 40px;
+    width: 40px;
+    height: 40px;
   }
 
   .title {
     font-size: 24px;
-  }
-
-  .form {
-    row-gap: 20px;
   }
 
   .form input,
@@ -135,18 +155,15 @@
 
 @media (max-width: 540px) {
   .closeBtn {
-    /* top: -3%; */
-    right: calc(50% - 28px);
-    font-weight: 100;
-    font-size: 100px;
+    margin-right: -10px;
   }
 
-  .modalContent {
+  .form {
     padding: 20px 10px;
   }
 
   .modalContent {
-    max-width: 370px;
+    max-width: 540px;
   }
 
   .title {

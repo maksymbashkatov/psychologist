@@ -50,7 +50,6 @@ export default function ModalForm({ onClose }: Props) {
           onClick={onClose}
           aria-label='Закрыть'
         >
-          ×
         </button>
         {!success ? (
           <form onSubmit={handleSubmit} className={styles.form}>
