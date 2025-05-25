@@ -7,7 +7,7 @@ import Youtube from './social-icons/youtube';
 import Instagram from './social-icons/instagram';
 
 export default function Footer() {
-  return <footer className='section'>
+  return <footer id='kontakty' className='section'>
     <div className={`${styles.container} container`}>
       <div className={styles.contacts}>
         <h4>Диана Лонская</h4>

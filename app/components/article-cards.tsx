@@ -3,7 +3,7 @@ import styles from './article-cards.module.css';
 import { articleCards } from '../data';
 
 export default function ArticleCards() {
-  return <section className='section'>
+  return <section id='stati' className='section'>
     <div className={`${styles.container} container`}>
       <h2 className={styles.title}>Статьи и публикации</h2>
       {
