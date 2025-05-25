@@ -1,0 +1,175 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  z-index: 10;
+}
+
+.modalContent {
+  background: #FFF;
+  padding: 40px 60px;
+}
+
+.closeBtn {
+  position: absolute;
+  color: #FFF;
+  /* top: 10px; */
+  top: 0;
+  /* right: 20px; */
+  right: 0;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form {
+  display: grid;
+  row-gap: 40px;
+}
+
+.form input,
+.form textarea {
+  color: #4C5866;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #B6BEC8;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #7B8B9D;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 2px solid #4C5866;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.submitBtn {
+  width: 100%;
+  border: 2px solid #4C5866;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: all .7s;
+}
+
+.submitBtn p {
+  color: #4C5866;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .7s;
+}
+
+.submitBtn:hover p {
+  color: #FFF;
+}
+
+.submitBtn:hover {
+  background: #4C5866;
+}
+
+.error {
+  color: red;
+  margin-top: 8px;
+}
+
+.thanks {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* @media (min-width: 1025px) and (max-width: 1319px) { */
+@media (max-width: 1319px) {
+  .modalContent {
+    padding: 20px 30px;
+  }
+
+  .closeBtn {
+    top: 8px;
+    right: 16px;
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .form {
+    row-gap: 20px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .submitBtn {
+    padding: 16px 0;
+  }
+
+  .submitBtn p {
+    font-size: 16px;
+  }
+
+  .thanks {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .closeBtn {
+    /* top: -3%; */
+    right: calc(50% - 28px);
+    font-weight: 100;
+    font-size: 100px;
+  }
+
+  .modalContent {
+    padding: 20px 10px;
+  }
+
+  .modalContent {
+    max-width: 370px;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+
+  .form input,
+  .form textarea {
+    border: 1px solid #B6BEC8;
+  }
+
+  .form input:focus,
+  .form textarea:focus {
+    border: 1px solid #4C5866;
+  }
+
+  .submitBtn {
+    border: 1px solid #4C5866;
+    transition: all .1s;
+  }
+
+  .submitBtn p {
+    font-weight: 500;
+    transition: all .1s;
+  }
+}

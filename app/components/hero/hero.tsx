@@ -1,8 +1,12 @@
+import ModalForm from '../modal-form';
+import OpenModal from '../open-modal';
 import styles from './hero.module.css';
 
-export default function Hero() {
-  return <section className={styles.hero}>
-    <div className={`${styles.heroContainer} container`}>
+export default function Hero(
+  { isOpen, openModal, closeModal }:
+  { isOpen: boolean, openModal: () => void, closeModal: () => void }
+) {
+  return <div className={`${styles.heroContainer} container`}>
       <div className={styles.heroContent}>
         <h1 className={styles.mainTitle}>
           <span>Лонская Диана</span>
@@ -10,16 +14,11 @@ export default function Hero() {
           <span>Индивидуальное консультирование и психоаналитическая терапия взрослых</span>
         </h1>
         <p className={styles.quote}>“Помогаю быть, а не стать.”</p>
-        <button
-          id='openModal'
-          className={styles.openModal}
-          type='button'
-          aria-haspopup='dialog'
-          aria-controls='modal'
-        >
-          Записаться
-        </button>
+        <OpenModal
+          openModal={openModal}
+          name='Записаться'
+        />
       </div>
-    </div>
-  </section>;
+      {isOpen && <ModalForm onClose={closeModal} />}
+    </div>;
 }

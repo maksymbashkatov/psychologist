@@ -66,22 +66,6 @@
   border-radius: 60px 0px;
 }
 
-.openModal {
-  justify-self: end;
-  width: fit-content;
-  text-transform: uppercase;
-  color: #FFF;
-  background-color: #C08081;
-  padding: 11px 30px;
-  font-size: 36px;
-  font-weight: 300;
-  transition: all 0.5s;
-}
-
-.openModal:hover {
-  background-color: #AF5E5F;
-}
-
 @media (min-width: 1025px) and (max-width: 1319px) {
   .hero {
     height: calc(100vh - 100px);
@@ -117,11 +101,6 @@
     padding: 28px 70px;
     outline-offset: -5px;
     border-radius: 60px 0px;
-  }
-
-  .openModal {
-    padding: 10px 28px;
-    font-size: 30px;
   }
 }
 
@@ -174,12 +153,6 @@
     line-height: normal;
     margin-top: -200px;
   }
-
-  .openModal {
-    padding: 11px 30px;
-    font-size: 36px;
-    width: 100%;
-  }
 }
 
 @media (max-width: 540px) {
@@ -222,12 +195,6 @@
     width: 160px;
     margin-top: 60px;
     border-radius: 30px 0px;
-  }
-
-  .openModal {
-    padding: 14px 0;
-    font-size: 24px;
-    width: 100%;
   }
 }
 
