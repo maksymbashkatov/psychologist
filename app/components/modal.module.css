@@ -114,8 +114,12 @@
 }
 
 .thanks {
+  justify-self: center;
+  align-self: center;
   text-align: center;
+  background: #FFF;
   font-size: 20px;
+  padding: 40px 60px;
 }
 
 @media (max-width: 1319px) {
@@ -150,6 +154,7 @@
 
   .thanks {
     font-size: 16px;
+    padding: 20px 30px;
   }
 }
 
@@ -188,5 +193,9 @@
   .submitBtn p {
     font-weight: 500;
     transition: all .1s;
+  }
+
+  .thanks {
+    padding: 20px 10px;
   }
 }
