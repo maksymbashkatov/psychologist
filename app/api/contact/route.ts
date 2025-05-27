@@ -2,6 +2,12 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
+  console.log('SMTP vars:', {
+    host: process.env.SMTP_HOST,
+    port: process.env.SMTP_PORT,
+    user: process.env.SMTP_USER,
+    pass: Boolean(process.env.SMTP_PASS),
+  });
   const { name, email, phone, question } = await request.json();
 
   if (!name || !email || !question) {
