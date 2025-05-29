@@ -1,0 +1,28 @@
+.section {
+  background: #E1E3E7;
+}
+
+.container {
+  display: grid;
+  row-gap: 20px;
+  color: #4C5866;
+}
+
+.container h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.container p {
+  line-height: 1.5;
+}
+
+@media (max-width: 1319px) {
+  .container h2 {
+    font-size: 28px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+}

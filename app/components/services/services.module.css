@@ -94,6 +94,10 @@
 }
 
 @media (max-width: 540px) {
+  .container >:nth-child(5) {
+    font-size: 19px;
+  }
+
   .title {
     font-size: 24.5px;
   }
@@ -112,5 +116,11 @@
 
   .card {
     row-gap: 8px;
+  }
+}
+
+@media (max-width: 390px) {
+  .title {
+    font-size: 22.4px;
   }
 }

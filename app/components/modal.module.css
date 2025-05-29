@@ -108,6 +108,20 @@
   background: #4C5866;
 }
 
+.privacy {
+  max-width: 552px;
+  font-size: 14px;
+  color: #7B8B9D;
+}
+
+.privacy a {
+  color: #4C5866;
+}
+
+.privacy a:hover {
+  text-decoration: underline #4C5866;
+}
+
 .error {
   color: red;
   margin-top: 8px;
@@ -152,6 +166,11 @@
     font-size: 16px;
   }
 
+  .privacy {
+    max-width: 441px;
+    font-size: 12px;
+  }
+
   .thanks {
     font-size: 16px;
     padding: 20px 30px;
@@ -164,6 +183,7 @@
   }
 
   .form {
+    row-gap: 10px;
     padding: 20px 10px;
   }
 
@@ -195,7 +215,22 @@
     transition: all .1s;
   }
 
+  .form input,
+  .form textarea {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .submitBtn {
+    padding: 15px 0;
+  }
+
+  .submitBtn p {
+    font-size: 15px;
+  }
+
   .thanks {
+    font-size: 15px;
     padding: 20px 10px;
   }
 }

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './modal.module.css';
+import Link from 'next/link';
 
 interface Props {
   onClose: () => void;
@@ -80,7 +81,7 @@ export default function ModalForm({ onClose }: Props) {
                 type='tel'
                 value={form.phone}
                 onChange={handleChange}
-                // required
+                required
               />
             </label>
             <label>
@@ -101,6 +102,7 @@ export default function ModalForm({ onClose }: Props) {
             >
               {sending ? <p>{'Отправка...'}</p> : <p>{'Отправить'}</p>}
             </button>
+            <p className={styles.privacy}>Ваши данные используются только для связи с Вами и никогда не передаются третьим лицам. Нажимая кнопку "Отправить", Вы соглашаетесь с <Link href={'/privacy'} target='blank'>политикой конфиденциальности</Link>.</p>
           </form>
         ) : (
           <p className={styles.thanks}>

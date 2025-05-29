@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   const { name, email, phone, question } = await request.json();
 
-  if (!name || !email || !question) {
+  if (!name || !email || !phone || !question) {
     return NextResponse.json(
       { message: 'Все поля обязательны' },
       { status: 400 }

@@ -119,6 +119,10 @@ button {
   padding-bottom: 80px;
 }
 
+header {
+  background-color: #FFF;
+}
+
 footer {
   background-color: #4C5866;
 }
