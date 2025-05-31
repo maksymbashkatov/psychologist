@@ -34,10 +34,10 @@ export default function Footer() {
         <h4>Реквизиты</h4>
         <p>Индивидуальный предприниматель</p>
         <p>Лонская Диана Владимировна</p>
-        <p>ИНН: 7777777777</p>
+        <p>ИНН: 772025729466</p>
       </div>
       <div className={styles.privacy}>
-        <Link href={'/'}>Политика конфиденцеальности</Link>
+        <Link href={'/privacy'} target='blank'>Политика конфиденцеальности</Link>
         <Link href={'/'}>Оферта</Link>
       </div>
     </div>
