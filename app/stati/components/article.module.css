@@ -1,0 +1,55 @@
+.article {
+  display: grid;
+  row-gap: 20px;
+  color: #4C5866;
+}
+
+.article h1 {
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.article img {
+  max-width: 100%;
+  /* padding: 20px 0; */
+}
+
+.article p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (min-width: 1025px) and (max-width: 1319px) {
+  .article h1 {
+    font-size: 40px;
+  }
+
+  .article p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .article {
+    row-gap: 16px;
+  }
+
+  .article h1 {
+    font-size: 36px;
+  }
+
+  .article p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .article h1 {
+    font-size: 20px;
+  }
+
+  .article p {
+    font-size: 14px;
+  }
+}
