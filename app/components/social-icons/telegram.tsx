@@ -5,7 +5,7 @@ export default function Telegram(
   { fill }: { fill: string }
 ) {
   return <Link
-    href='https://t.me/telegram_login_here'
+    href='https://t.me/diana_lonskaya'
     target='_blank'
     rel='nofollow noopener noreferrer'
   >

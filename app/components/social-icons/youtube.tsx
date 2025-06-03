@@ -5,7 +5,7 @@ export default function Youtube(
   { fill }: { fill: string }
 ) {
   return <Link
-    href='https://...'
+    href='https://t.me/diana_lonskaya'
     target='_blank'
     rel='nofollow noopener noreferrer'
   >

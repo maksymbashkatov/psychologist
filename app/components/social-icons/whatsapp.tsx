@@ -5,7 +5,7 @@ export default function WhatsApp(
   { fill }: { fill: string }
 ) {
   return <Link
-    href='https://wa.me/375...'
+    href='https://wa.me/79104338796'
     target='_blank'
     rel='nofollow noopener noreferrer'
   >

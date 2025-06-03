@@ -7,13 +7,12 @@ export const metadata: Metadata = {
   title: 'Диана Лонская - психоаналитический терапевт взрослых',
   description: '',
   alternates: {
-    canonical: 'https://...',
+    canonical: 'https://dianalonskaya.com',
   },
   icons: [
     { rel: 'icon', url: '/favicon.ico' },
     { rel: 'icon', url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    { rel: 'icon', url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
-    { rel: 'apple-touch-icon', url: '/apple-touch-icon.png', sizes: '180x180' }
+    { rel: 'icon', url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' }
   ],
 };
 
