@@ -1,17 +1,9 @@
-import { useState } from 'react';
 import styles from './questions.module.css';
 import { questions } from '../data';
 
-export default function Questions() {
-  const [openAnswers, setOpenAnswers] = useState<Record<number, boolean>>({});
-
-  const toggleAnswer = (id: number) => {
-    setOpenAnswers(prev => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
-  };
-
+export default function Questions(
+  { openAnswers, toggleAnswer }: {openAnswers: Record<number, boolean>, toggleAnswer: any}
+) {
   return <div className={`${styles.container} container`}>
     <h2 className={styles.title}>Основные вопросы</h2>
     {
