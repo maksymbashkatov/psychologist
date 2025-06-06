@@ -1,4 +1,4 @@
-import Hero from './hero/hero';
+import Hero from './components/hero';
 
 export default function Page() {
   return <main>
