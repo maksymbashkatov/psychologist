@@ -3,7 +3,8 @@ import Article from './article';
 export default function GlavnyjVoprosNarcissicheskogoStradaniya() {
   return <Article
     title='Главный вопрос нарциссического страдания'
-    src='/articles/2.webp'
+    // src='/articles/2.webp'
+    src='/articles/2.jpg'
     alt=''
   >
     <p>Каждая жемчужина появляется вследствие страдания моллюска, когда песчинка врезается в его тонкую плоть. Раскрывая створки раковины, он впускает и питательные вещества, и невидимый мусор, перед которым оказывается беззащитным.</p>

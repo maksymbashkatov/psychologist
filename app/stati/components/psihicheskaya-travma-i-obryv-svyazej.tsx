@@ -3,7 +3,8 @@ import Article from './article';
 export default function PsihicheskayaTravmaIObryvSvyazej() {
   return <Article
     title='Психическая травма и обрыв связей'
-    src='/articles/4.webp'
+    // src='/articles/4.webp'
+    src='/articles/4.jpg'
     alt=''
   >
     <p>"Все, что происходит с человеком в раннем детстве возвращается словно неприкаянный дух и не находит покоя, пока не получит названия и принятия…" З. Фрейд.</p>

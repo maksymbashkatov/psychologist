@@ -3,7 +3,8 @@ import Article from './article';
 export default function ZhadnostIUtolenieVnutrennegoGoloda() {
   return <Article
     title='Жадность и утоление внутреннего голода'
-    src='/articles/3.webp'
+    // src='/articles/3.webp'
+    src='/articles/3.jpg'
     alt=''
   >
     <p>Вас когда-либо охватывало ощущение острой жажды чего-то неясного, когда невозможно понять, чего именно вам не хватает?</p>
