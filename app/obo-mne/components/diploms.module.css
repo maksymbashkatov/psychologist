@@ -1,0 +1,96 @@
+.diploms {
+  display: grid;
+  row-gap: 40px;
+  overflow: hidden;
+}
+
+.diplom {
+  transition: opacity 0.5s, transform 0.5s;
+  width: 900px;
+}
+
+.diplomsContainer {
+  justify-self: center;
+  display: grid;
+  column-gap: 100px;
+  grid-template-columns: repeat(4, auto);
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.noTransition {
+  transition: none !important;
+}
+
+.activeDiplom {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.inactiveDiplom {
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+
+.circlesContainer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFF;
+  cursor: pointer;
+  border: 3px solid #C08081;
+  transition: background-color 0.3s;
+}
+
+.activeCircle {
+  background-color: #C08081;
+}
+
+@media (min-width: 1025px) and (max-width: 1319px) {
+  .diplom {
+    width: 800px;
+  }
+
+  .diplomsContainer {
+    column-gap: 80px;
+  }
+
+  .circlesContainer {
+    column-gap: 36px;
+  }
+
+  .circle {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 540px) {
+  .diploms {
+    row-gap: 20px;
+  }
+  
+  .diplom {
+    width: 370px;
+  }
+
+  .diplomsContainer {
+    column-gap: 0;
+  }
+
+  .circlesContainer {
+    column-gap: 36px;
+  }
+
+  .circle {
+    width: 28px;
+    height: 28px;
+  }
+}
