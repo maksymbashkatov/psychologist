@@ -136,7 +136,7 @@
   padding: 40px 60px;
 }
 
-@media (max-width: 1319px) {
+@media (max-width: 1366px) {
   .form {
     row-gap: 20px;
     top: -20px;
