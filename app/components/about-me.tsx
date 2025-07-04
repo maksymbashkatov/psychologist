@@ -18,7 +18,6 @@ export default function AboutMe() {
             </div>)
           }
         </div>
-        {/* <p className={styles.quote}>“Помогаю исследовать внутренние тупики, разбираться с чувствами, осознавать конфликты, искать смыслы и осуществлять выбор.”</p> */}
         <Link href='/obo-mne' className={styles.button}>
           <p>Подробнее</p>
         </Link>
