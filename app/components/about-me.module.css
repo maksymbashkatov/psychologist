@@ -1,8 +1,8 @@
 .aboutMe {
   background-color: #B8B9BD;
-  background-image: url(/photoAboutMe.webp);
+  background-image: url(/mainAboutMe.webp);
   background-repeat: no-repeat;
-  background-position: left 0 bottom 0;
+  background-position: left 12% bottom 0;
   background-size: auto 100%;
   color: #000;
 
@@ -22,7 +22,7 @@
 
 .title {
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 300;
   line-height: .72;
 }
@@ -82,9 +82,9 @@
   background-color: #AF5E5F;
 }
 
-@media (min-width: 1025px) and (max-width: 1319px) {
+@media (min-width: 1025px) and (max-width: 1366px) {
   .aboutMe {
-    background-position: left -40px bottom 0;
+    background-position: left 10% bottom 0;
   }
 
   .content {
@@ -93,7 +93,7 @@
   }
   
   .title {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .theses {
@@ -129,13 +129,11 @@
 
 @media (max-width: 1024px) {
   .aboutMe {
-    height: 680px;
-    background-position: left 0 top 0;
-    background-size: auto 60%;
+    background-position: left -20% top 0;
   }
 
   .content {
-    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-rows: auto 1fr auto;
     max-width: 100%;
     height: 100%;
     row-gap: 20px;
@@ -143,12 +141,14 @@
   }
   
   .title {
-    font-size: 60px;
+    font-size: 50px;
+    width: 50%;
   }
   
   .theses {
     align-self: end;
     row-gap: 13px;
+    width: 50%;
   }
   
   .thesis {
@@ -161,7 +161,7 @@
   }
   
   .thesis p {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .quote {
@@ -186,33 +186,20 @@
 
 @media (max-width: 540px) {
   .aboutMe {
-    height: 560px;
     position: relative;
     background-image: none;
-    background: #D1D3D7;
-  }
-
-  .aboutMe::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 324px;
-    background: #B8B9BD;
-    top: 0;
-    background-image: url(/photoAboutMeMobile.webp);
-    background-size: auto 324px;
-    background-repeat: no-repeat;
-    background-position: top 0 right 100px;
   }
 
   .title {
     position: relative;
     z-index: 1;
-    font-size: 40px;
+    font-size: 36px;
+    width: 100%;
   }
 
   .theses {
-    row-gap: 13px;
+    row-gap: 18px;
+    width: 100%;
   }
   
   .thesis {
@@ -222,10 +209,6 @@
   .thesis div {
     width: 12px;
     height: 12px;
-  }
-  
-  .thesis p {
-    font-size: 15px;
   }
   
   .quote {
@@ -249,13 +232,5 @@
 @media (max-width: 393px) {
   .aboutMe::before {
     background-position: top 0 right 92px;
-  }
-
-  .theses {
-    row-gap: 12px;
-  }
-  
-  .thesis p {
-    font-size: 15px;
   }
 }
