@@ -2,13 +2,14 @@ import styles from './propositions.module.css';
 
 export default function Propositions() {
   return <section className={`${styles.propositions} container`}>
+    <h3 className={styles.title}>Направления работы</h3>
     <div className={styles.proposition}>
       <img src='/propositions/1.webp'></img>
       <h3>Индивидуальные консультации очно и онлайн</h3>
     </div>
     <div className={styles.proposition}>
       <img src='/propositions/2.webp'></img>
-      <h3>Мастер-классы и обучение</h3>
+      <h3>Вебинары и курсы</h3>
     </div>
     <div className={styles.proposition}>
       <img src='/propositions/3.webp'></img>

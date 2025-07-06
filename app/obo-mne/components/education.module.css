@@ -41,6 +41,7 @@
   }
 
   .title {
+    justify-self: center;
     font-size: 25px;
   }
 
