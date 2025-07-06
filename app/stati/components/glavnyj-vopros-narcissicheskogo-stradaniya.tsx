@@ -3,7 +3,6 @@ import Article from './article';
 export default function GlavnyjVoprosNarcissicheskogoStradaniya() {
   return <Article
     title='Главный вопрос нарциссического страдания'
-    // src='/articles/2.webp'
     src='/articles/2.jpg'
     alt=''
   >

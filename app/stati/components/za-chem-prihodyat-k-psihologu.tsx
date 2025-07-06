@@ -3,7 +3,6 @@ import Article from './article';
 export default function ZaChemPrihodyatKPsihologu() {
   return <Article
     title='За чем приходят к психологу или пространство психотерапии'
-    // src='/articles/1.webp'
     src='/articles/1.jpg'
     alt=''
   >

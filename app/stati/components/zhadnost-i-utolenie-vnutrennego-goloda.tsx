@@ -3,7 +3,6 @@ import Article from './article';
 export default function ZhadnostIUtolenieVnutrennegoGoloda() {
   return <Article
     title='Жадность и утоление внутреннего голода'
-    // src='/articles/3.webp'
     src='/articles/3.jpg'
     alt=''
   >
