@@ -19,7 +19,7 @@
 .firstTitle {
   display: grid;
   row-gap: 20px;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 500;
   line-height: 1;
 }
@@ -32,46 +32,49 @@
   text-transform: uppercase;
 }
 
-.firstTitle > span:nth-child(2) {
-  justify-self: end;
-}
-
 .secondTitle {
   display: grid;
-  row-gap: 20px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  row-gap: 40px;
+  column-gap: 20px;
   font-size: 22px;
   font-weight: 400;
   max-width: 772px;
 }
 
-.quote {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  max-width: 772px;
-  background: #FFF;
-  padding: 30px;
-  outline: 1px dashed #4C5866;
-  outline-offset: -8px;
-  border-radius: 60px 0px;
+.serial {
+  width: 56px;
+  justify-self: center;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 200;
+  border: 1px solid #4C5866;
+  border-radius: 50%;
 }
 
 .title {
   display: none;
 }
 
-@media (min-width: 1025px) and (max-width: 1319px) {
+@media (min-width: 1025px) and (max-width: 1366px) {
   .hero {
     height: calc(100vh - 100px);
   }
 
   .firstTitle {
     row-gap: 18px;
+    font-size: 50px;
   }
 
   .secondTitle {
     row-gap: 18px;
     font-size: 20px;
+  }
+
+  .serial {
+    width: 50px;
+    font-size: 40px;
   }
 }
 
@@ -100,29 +103,13 @@
   .title {
     margin: 0 auto;
     padding: 20px;
-    display: grid;
-    row-gap: 20px;
+    display: block;
   }
 
   .title >:nth-child(1) {
-    row-gap: 2px;
-    font-size: 29px;
-    font-weight: 600;
-    line-height: 1;
-
-    span {
-      display: block;
-    }
-  }
-
-  .title >:nth-child(1) >:nth-child(1) {
-    text-transform: uppercase;
-  }
-
-  .title >:nth-child(2) {
     display: grid;
-    row-gap: 10px;
-    font-size: 14px;
+    row-gap: 30px;
+    font-size: 20px;
     max-width: 100%;
     font-weight: 400;
 
@@ -135,20 +122,11 @@
     justify-content: normal;
     align-content: normal;
   }
-
-  .quote {
-    align-self: center;
-    font-size: 14px;
-    max-width: 350px;
-    padding: 20px 15px;
-    outline-offset: -5px;
-    border-radius: 30px 0px;
-  }
 }
 
 @media (max-width: 540px) {
   .hero {
-    background-position: right calc(50% - 90px) bottom 0;
+    background-position: center bottom 0;
     background-size: auto calc(100svh - 60px);
     height: calc(100svh - 60px);
   }
@@ -156,11 +134,10 @@
   .title {
     max-width: 380px;
     padding: 20px 5px;
-    row-gap: 20px;
   }
 
-  .quote {
-    font-size: 12px;
-    max-width: 200px;
+  .title >:nth-child(1) {
+    row-gap: 16px;
+    font-size: 16px;
   }
 }
