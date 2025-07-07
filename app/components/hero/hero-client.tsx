@@ -1,7 +1,8 @@
 'use client';
+
 import { useState } from 'react';
-import styles from './hero.module.css';
-import Hero from './hero';
+import OpenModal from '../open-modal';
+import ModalForm from '../modal-form';
 
 export default function HeroClient() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +10,11 @@ export default function HeroClient() {
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
-  return <section className={styles.hero}>
-    <Hero
-      isOpen={isOpen}
+  return <>
+    <OpenModal
       openModal={openModal}
-      closeModal={closeModal}
+      name='Записаться'
     />
-  </section>;
+    {isOpen && <ModalForm onClose={closeModal} />}
+  </>;
 }
