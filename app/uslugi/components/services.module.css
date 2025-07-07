@@ -13,3 +13,40 @@
   font-size: 60px;
   font-weight: 500;
 }
+
+.container >:nth-child(3) >:nth-child(1) {
+  grid-column: 2 / 3;
+}
+
+.container >:nth-child(3) >:nth-child(2) {
+  grid-row: 1 / 2;
+  padding: 40px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .container >:nth-child(3) >:nth-child(2) {
+    padding: 36px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 540px) {
+  .container {
+    row-gap: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .container >:nth-child(3) >:nth-child(2) {
+    padding: 26px 14px;
+  }
+}

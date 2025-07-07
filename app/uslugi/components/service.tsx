@@ -1,3 +1,4 @@
+import ToBookBtn from '@/app/components/to-book-btn';
 import styles from './service.module.css';
 
 export default function Service(
@@ -22,6 +23,7 @@ export default function Service(
       {conditions.map((с, i) =>
         <p key={i} className={styles.condition}><span>{с[0]}</span> {с[1]}</p>
       )}
+      <ToBookBtn name='Записаться'/>
     </div>
   </div>
 }

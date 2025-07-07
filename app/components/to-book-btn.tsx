@@ -1,10 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import OpenModal from '../open-modal';
-import ModalForm from '../modal-form';
+import OpenModal from './open-modal';
+import ModalForm from './modal-form';
 
-export default function HeroClient() {
+export default function ToBookBtn(
+  { name }:
+  { name: string }
+) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
@@ -13,7 +16,7 @@ export default function HeroClient() {
   return <>
     <OpenModal
       openModal={openModal}
-      name='Записаться'
+      name={name}
     />
     {isOpen && <ModalForm onClose={closeModal} />}
   </>;
