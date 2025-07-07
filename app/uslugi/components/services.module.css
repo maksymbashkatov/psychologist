@@ -1,0 +1,15 @@
+.section {
+  background: #E1E3E7;
+}
+
+.container {
+  display: grid;
+  row-gap: 40px;
+  color: #4C5866;
+}
+
+.title {
+  justify-self: center;
+  font-size: 60px;
+  font-weight: 500;
+}

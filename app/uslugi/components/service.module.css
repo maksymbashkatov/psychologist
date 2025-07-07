@@ -1,0 +1,40 @@
+.service {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background: #FFF;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  display: grid;
+  row-gap: 30px;
+  padding: 40px;
+  padding-left: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.subTitle {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content {
+  font-size: 16px;
+}
+
+.condition {
+  font-size: 24px;
+
+  span {
+    font-weight: 600;
+  }
+}
