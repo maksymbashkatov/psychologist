@@ -1,13 +1,18 @@
 .service {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: auto 1fr;
+  align-items: stretch;
   background: #FFF;
 }
 
 .service img {
-  align-self: center;
-  max-width: 100%;
-  height: auto;
+  display: block;
+  align-self: stretch;
+  height: 100%;
+  width: auto;
+  max-width: 424.7px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .card {
