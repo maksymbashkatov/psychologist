@@ -96,7 +96,7 @@
   }
 
   .titleBack {
-    background: rgba(255, 255, 255, .75);
+    background: rgba(255, 255, 255, .85);
     width: 100%;
   }
 
@@ -126,8 +126,8 @@
 
 @media (max-width: 540px) {
   .hero {
-    background-position: center bottom 0;
-    background-size: auto calc(100svh - 60px);
+    background-position: left 70% top 0;
+    background-size: auto 130%;
     height: calc(100svh - 60px);
   }
 
@@ -137,7 +137,11 @@
   }
 
   .title >:nth-child(1) {
-    row-gap: 16px;
-    font-size: 16px;
+    row-gap: 15px;
+    font-size: 15px;
+  }
+
+  .title > :first-child span:nth-child(5n+1) {
+    display: none;
   }
 }

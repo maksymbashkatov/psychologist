@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './propositions.module.css';
 
 export default function Propositions() {
@@ -19,6 +20,9 @@ export default function Propositions() {
       <img src='/propositions/4.webp'></img>
       <h3>Супервизия</h3>
     </div>
-    <p>Это позволит вам изменить привычный взгляд на себя, увидеть скрытые мотивы ваших выборов и привнесет в вашу жизнь больше осмысленности и удовлетворенности</p>
+    <div className={styles.text}>
+      <p>Это позволит вам изменить привычный взгляд на себя, увидеть скрытые мотивы ваших выборов и привнесет в вашу жизнь больше осмысленности и удовлетворенности.</p>
+      <p>Также вы можете ознакомиться с моими постами и заметками <span className={styles.link}><Link href='https://t.me/diana_lonskaya' target='_blank' rel='nofollow noopener noreferrer'>ЗДЕСЬ</Link></span>. В них я делюсь размышлениями о психической экономике, динамике чувств и отношениях с собой — серьёзно о глубоком…</p>
+    </div>
   </section>
 }
