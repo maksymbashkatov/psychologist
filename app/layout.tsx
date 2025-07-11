@@ -5,7 +5,7 @@ import Footer from './components/footer';
 
 export const metadata: Metadata = {
   title: 'Диана Лонская - психоаналитический терапевт взрослых',
-  description: '',
+  description: 'Терапия очно и онлайн. Работа с бессознательным, внутренними конфликтами и травмами, поиск новых смыслов. 13 лет опыта, индивидуальный и доверительный подход.',
   alternates: {
     canonical: 'https://dianalonskaya.com',
   },
