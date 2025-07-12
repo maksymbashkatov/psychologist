@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: MyPageProps): Promise<Metadat
   const { slug } = await resolvedParams;
   const article = articles.find((item) => item.slug === slug);
   return {
-    // title: service?.metaTitle,
-    // description: service?.metaDescription,
+    title: article?.title,
+    description: article?.description,
     alternates: {
       canonical: `https://dianalonskaya.com/stati/${article?.slug}`,
     }
