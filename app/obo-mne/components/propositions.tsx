@@ -5,19 +5,31 @@ export default function Propositions() {
   return <section className={`${styles.propositions} container`}>
     <h3 className={styles.title}>Направления работы</h3>
     <div className={styles.proposition}>
-      <img src='/propositions/1.webp'></img>
+      <img
+        src='/propositions/1.webp'
+        alt='Психолог проводит онлайн консультацию.'
+      ></img>
       <h3>Индивидуальные консультации очно и онлайн</h3>
     </div>
     <div className={styles.proposition}>
-      <img src='/propositions/2.webp'></img>
+      <img
+        src='/propositions/2.webp'
+        alt='Несколько человек празднуют окончание курса.'
+      ></img>
       <h3>Вебинары и курсы</h3>
     </div>
     <div className={styles.proposition}>
-      <img src='/propositions/3.webp'></img>
+      <img
+        src='/propositions/3.webp'
+        alt='Психотерапевт проводит длительную терапию.'
+      ></img>
       <h3>Длительная терапия</h3>
     </div>
     <div className={styles.proposition}>
-      <img src='/propositions/4.webp'></img>
+      <img
+        src='/propositions/4.webp'
+        alt='Опытный психолог делится знаниями с молодым.'
+      ></img>
       <h3>Супервизия</h3>
     </div>
     <div className={styles.text}>

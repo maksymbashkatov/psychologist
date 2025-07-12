@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     { rel: 'icon', url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     { rel: 'icon', url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' }
   ],
+  other: {
+    'yandex-verification': 'ff9b950c48bd8389',
+    'google-site-verification': '90v9ePYGA_X207-eWhDHSAalOQS0gx7_IO8A49pRsvA'
+  }
 };
 
 export const viewport: Viewport = {
