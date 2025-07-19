@@ -1,3 +1,4 @@
+import Courses from './components/courses';
 import Services from './components/services';
 
 export function generateMetadata() {
@@ -13,5 +14,6 @@ export function generateMetadata() {
 export default function Page() {
   return <main>
     <Services/>
+    <Courses/>
   </main>;
 }

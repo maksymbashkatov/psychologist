@@ -28,7 +28,6 @@
   font-style: normal;
   font-weight: 300;
   src: url(../public/fonts/montserrat-300.woff2) format('woff2');
-  /* src: url(/public/fonts/montserrat-300.woff2) format('woff2'); */
 }
 
 @font-face {

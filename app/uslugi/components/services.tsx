@@ -1,5 +1,6 @@
 import Service from './service';
 import styles from './services.module.css';
+import Title from './title';
 
 const services = [
   {
@@ -55,7 +56,7 @@ const services = [
 export default function Services() {
   return <section className={`${styles.section} section`}>
     <div className={`${styles.container} container`}>
-      <h2 className={styles.title}>Услуги</h2>
+      <Title title='Услуги'/>
       {services.map((s) =>
         <Service
           key={s.id}
